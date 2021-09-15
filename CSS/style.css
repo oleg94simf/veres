@@ -1,0 +1,516 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fons/Gilroy-Regular.woff") format("woff"), url("../fons/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fons/Gilroy-Bold.woff") format("woff"), url("../fons/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fons/Gilroy-SemiBold.woff") format("woff"), url("../fons/Gilroy-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+.text1 {
+  margin-top: 48px;
+}
+
+.text2 {
+  margin-top: 20px;
+}
+
+.veres__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 1080px;
+}
+
+.veres__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.veres__content .bot {
+  position: absolute;
+  height: 436px;
+  width: 649px;
+  left: -150px;
+  bottom: -50px;
+}
+
+.veres__block {
+  margin-top: 216px;
+}
+
+.veres__logo img {
+  width: 215px;
+  height: 109px;
+}
+
+.veres__block2 {
+  max-width: 566px;
+  margin: 55px auto 0 auto;
+}
+
+.veres__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.veres__title-bold {
+  color: #026937;
+}
+
+.veres__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.veres__sub-text {
+  margin-top: 33px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #006938;
+}
+
+.veres__imgaes {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background: url(../img/fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.veres__imgaes img {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.veres__link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+  top: 500px;
+  left: 226px;
+}
+
+.veres__link {
+  border-radius: 15px;
+  max-width: 359px;
+  padding: 20px 10px 20px 10px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+.telegram {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  color: #29aaec;
+  font-size: 19px;
+  position: relative;
+}
+
+.telegram::after {
+  content: "";
+  background: url(../img/telegram.png);
+  width: 28px;
+  height: 23px;
+  position: absolute;
+  right: 60px;
+}
+
+.viber {
+  margin-top: 39px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  color: #675dac;
+  font-size: 19px;
+  position: relative;
+}
+
+.viber::after {
+  content: "";
+  background: url(../img/viber.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 83px;
+}
+
+.link-mobile__container {
+  display: none;
+}
+
+.veres__footer {
+  display: none;
+}
+
+@media (max-width: 1399.98px) {
+  .veres__imgaes img {
+    position: absolute;
+    top: 50px;
+    left: 110px;
+  }
+  .veres__link-container {
+    left: 186px;
+  }
+}
+
+@media (max-width: 1250.98px) {
+  .veres__container {
+    height: 900px;
+  }
+  .veres__imgaes img {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .veres__link-container {
+    top: 450px;
+    left: 184px;
+  }
+  .veres__link {
+    width: 270px;
+  }
+  .telegram::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+  }
+  .viber::after {
+    content: "";
+    position: absolute;
+    right: 38px;
+  }
+  .veres__block {
+    margin: 150px 10px 0 10px;
+  }
+}
+
+@media (max-width: 1150.98px) {
+  .veres__logo {
+    text-align: center;
+  }
+  .veres__logo img {
+    width: 215px;
+    height: 109px;
+  }
+  .veres__block2 {
+    text-align: center;
+  }
+  .veres__title {
+    text-align: center;
+    font-size: 40px;
+  }
+  .veres__title-bold {
+    color: #026937;
+  }
+  .veres__text {
+    font-size: 20px;
+  }
+  .veres__sub-text {
+    font-size: 20px;
+    color: #006938;
+  }
+  .veres__imgaes img {
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .veres__link-container {
+    left: 84px;
+  }
+}
+
+@media (max-width: 870.98px) {
+  .veres__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    background: url(../img/fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .veres__block {
+    margin-top: 50px;
+  }
+  .veres__block2 {
+    margin-top: 20px;
+  }
+  .veres__title {
+    color: #fff;
+  }
+  .veres__title-bold {
+    color: #fff;
+  }
+  .veres__text {
+    color: #fff;
+  }
+  .veres__sub-text {
+    display: none;
+  }
+  .veres__link-mobile {
+    width: 376px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 19px 0 19px 0;
+    border-radius: 15px;
+  }
+  .veres__footer {
+    display: block;
+  }
+  .veres__imgaes {
+    display: none;
+  }
+  .bot {
+    display: none;
+  }
+  .text1 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+  }
+  .text2 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .link-mobile__container {
+    margin-top: 40px;
+    display: block;
+  }
+  .telegram::after {
+    position: absolute;
+    right: 60px;
+  }
+  .viber::after {
+    position: absolute;
+    right: 80px;
+  }
+  .footer__img {
+    margin-top: 30px;
+  }
+  .footer__text {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400.98px) {
+  .veres__title {
+    color: #fff;
+    font-size: 29px;
+  }
+  .veres__link-mobile {
+    width: 320px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 19px 0 19px 0;
+    border-radius: 15px;
+  }
+  .telegram::after {
+    position: absolute;
+    right: 35px;
+  }
+  .viber::after {
+    position: absolute;
+    right: 57px;
+  }
+  .footer__img {
+    margin-top: 30px;
+  }
+  .footer__text {
+    text-align: center;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .veres__footer {
+    margin: 0 auto;
+    width: 242px;
+  }
+}
