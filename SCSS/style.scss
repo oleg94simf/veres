@@ -27,11 +27,21 @@
 	margin-top: 20px;
 }
 
+body {
+	height: 100vh;
+}
+
+.main {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .veres {
 	&__container {
+		flex: 1 1 auto;
 		display: flex;
 		overflow: hidden;
-		height: 1080px;
 	}
 
 	&__content {
@@ -41,19 +51,19 @@
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
-
 		align-items: center;
 		& .bot {
 			position: absolute;
 			height: 436px;
 			width: 649px;
-			left: -150px;
-			bottom: -50px;
+			left: -170px;
+			bottom: -180px;
+			z-index: -1;
 		}
 	}
 
 	&__block {
-		margin-top: 216px;
+		margin-top: 36px;
 	}
 
 	&__logo {
@@ -104,9 +114,10 @@
 		position: relative;
 
 		& img {
+			transform: scale(0.7);
 			position: absolute;
-			top: 50px;
-			left: 150px;
+			top: -160px;
+			left: -80px;
 		}
 	}
 
@@ -115,52 +126,50 @@
 		flex-direction: column;
 		position: relative;
 		z-index: 1;
-		top: 500px;
-		left: 226px;
+		top: 320px;
+		left: 225px;
 	}
 
 	&__link {
 		border-radius: 15px;
-		max-width: 359px;
-
-		padding: 20px 10px 20px 10px;
 		background-color: #fff;
 		display: inline-block;
-		text-align: center;
+		font-size: 19px;
+		font-family: "Gilroy";
+		font-style: normal;
+		font-weight: bold;
 	}
 }
-.telegram {
-	font-family: "Gilroy";
-	font-style: normal;
-	font-weight: bold;
-	color: #29aaec;
-	font-size: 19px;
-	position: relative;
 
+.telegram {
+	max-width: 228px;
+	padding: 18px 10px 18px 22px;
+	color: #29aaec;
+	position: relative;
+	width: 100%;
+	display: inline-block;
 	&::after {
 		content: "";
-		background: url(../img/telegram.png);
+		background: url(../img/telegram.svg);
 		width: 28px;
 		height: 23px;
 		position: absolute;
-		right: 60px;
+		right: 25px;
 	}
 }
 .viber {
-	margin-top: 39px;
-	font-family: "Gilroy";
-	font-style: normal;
-	font-weight: bold;
+	max-width: 207px;
+	padding: 18px 10px 18px 43px;
+	margin-top: 38px;
 	color: #675dac;
-	font-size: 19px;
 	position: relative;
 	&::after {
 		content: "";
-		background: url(../img/viber.png);
+		background: url(../img/viber.svg);
 		width: 24px;
-		height: 24px;
+		height: 25px;
 		position: absolute;
-		right: 83px;
+		right: 45px;
 	}
 }
 .link-mobile__container {
@@ -171,112 +180,98 @@
 	display: none;
 }
 
-@media (max-width: 1399.98px) {
-	.veres {
-		&__imgaes {
-			& img {
-				position: absolute;
-				top: 50px;
-				left: 110px;
-			}
-		}
-		&__link-container {
-			left: 186px;
-		}
-	}
-}
-
 @media (max-width: 1250.98px) {
-	.veres__container {
-		height: 900px;
-	}
 	.veres {
-		&__imgaes {
-			& img {
-				position: absolute;
-				top: -50px;
-				left: -50px;
-				transform: scale(0.8);
-			}
-		}
-		&__link-container {
-			top: 450px;
-			left: 184px;
+		&__content {
 		}
 
-		&__link {
-			width: 270px;
+		&__block {
+			margin-top: 20px;
 		}
-	}
-	.telegram {
-		&::after {
-			content: "";
 
-			position: absolute;
-			right: 20px;
-		}
-	}
-	.viber {
-		&::after {
-			content: "";
-
-			position: absolute;
-			right: 38px;
-		}
-	}
-	.veres__block {
-		margin: 150px 10px 0 10px;
-	}
-}
-
-@media (max-width: 1150.98px) {
-	.veres {
 		&__logo {
-			text-align: center;
-			& img {
-				width: 215px;
-				height: 109px;
-			}
+			transform: scale(0.8);
 		}
 
 		&__block2 {
-			text-align: center;
+			margin-top: 30px;
 		}
 
 		&__title {
+			margin: 0 20px;
+			font-size: 50px;
 			text-align: center;
-			font-size: 40px;
 		}
 
 		&__title-bold {
-			color: #026937;
 		}
 
 		&__text {
-			font-size: 20px;
+			margin: 20px 15px 0 15px;
+			text-align: center;
 		}
 
 		&__sub-text {
-			font-size: 20px;
-			color: #006938;
+			text-align: center;
+			padding-bottom: 40px;
 		}
 
 		&__imgaes {
 			& img {
+				transform: scale(0.6);
 				position: absolute;
-				top: -50px;
-				left: -150px;
-				transform: scale(0.8);
+				top: -250px;
+				left: -200px;
 			}
 		}
 
 		&__link-container {
-			left: 84px;
+			position: relative;
+			z-index: 1;
+			top: 270px;
+			left: 180px;
+		}
+
+		&__link {
+			font-size: 17px;
+		}
+	}
+
+	.telegram {
+		max-width: 197px;
+		padding: 18px 10px 18px 15px;
+		color: #29aaec;
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		&::after {
+			content: "";
+			background: url(../img/telegram.svg);
+			width: 28px;
+			height: 23px;
+			position: absolute;
+			right: 15px;
+		}
+	}
+	.viber {
+		max-width: 179px;
+		padding: 18px 10px 18px 33px;
+		margin-top: 38px;
+		color: #675dac;
+		position: relative;
+		&::after {
+			content: "";
+			background: url(../img/viber.svg);
+			width: 24px;
+			height: 26px;
+			position: absolute;
+			right: 32px;
+			top: 15px;
 		}
 	}
 }
 
-@media (max-width: 870.98px) {
+@media (max-width: 1000.98px) {
 	.veres {
 		&__content {
 			flex: 0 1 100%;
@@ -284,18 +279,26 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 
 		&__block {
-			margin-top: 50px;
+			margin-top: 0px;
+		}
+
+		&__logo {
+			text-align: center;
 		}
 
 		&__block2 {
-			margin-top: 20px;
+			margin-top: 0px;
 		}
 
 		&__title {
 			color: #fff;
+			font-size: 40px;
 		}
 
 		&__title-bold {
@@ -304,6 +307,7 @@
 
 		&__text {
 			color: #fff;
+			font-size: 24px;
 		}
 
 		&__sub-text {
@@ -311,15 +315,16 @@
 		}
 
 		&__link-mobile {
-			width: 376px;
 			display: inline-block;
 			background-color: #fff;
-			padding: 19px 0 19px 0;
 			border-radius: 15px;
 		}
 
 		&__footer {
-			display: block;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
 		}
 
 		&__imgaes {
@@ -342,24 +347,20 @@
 	}
 	.link-mobile {
 		&__container {
-			margin-top: 40px;
-			display: block;
+			margin: 20px 20px 0 20px;
+			display: flex;
+
+			width: 100%;
+			justify-content: space-between;
+			margin-left: -0px;
 		}
 	}
-	.telegram {
-		&::after {
-			position: absolute;
-			right: 60px;
-		}
-	}
-	.viber {
-		&::after {
-			position: absolute;
-			right: 80px;
-		}
-	}
+
 	.footer {
 		&__img {
+			display: flex;
+			width: 100%;
+			justify-content: center;
 			margin-top: 30px;
 		}
 
@@ -369,57 +370,154 @@
 			font-weight: normal;
 			color: #fff;
 			font-size: 16px;
-			margin-top: 20px;
+			margin-top: 10px;
 		}
+	}
+
+	.veres__link-mobile {
+		font-family: "Gilroy";
+		font-style: normal;
+		font-weight: bold;
+	}
+	.mobile__telegram {
+		flex: 0 1 45%;
+		height: 60px;
+		background-color: #fff;
+		border-radius: 15px;
+		position: relative;
+	}
+	.mobile__viber {
+		flex: 0 1 45%;
+		height: 60px;
+		background-color: #fff;
+		border-radius: 15px;
+		position: relative;
+	}
+
+	.mobile__telegram-link {
+		color: #29aaec;
+		width: 100%;
+		display: inline-block;
+		position: relative;
+		font-size: 19px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+	}
+
+	.mobile__viber-link {
+		color: #675dac;
+		width: 100%;
+		display: inline-block;
+		position: relative;
+		font-size: 19px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		justify-content: center;
+	}
+
+	.mobile__messages {
+		margin-left: 5px;
 	}
 }
 
-@media (max-width: 400.98px) {
+@media (max-width: 600px) {
 	.veres {
+		&__block {
+			margin-top: 0px;
+		}
+
+		&__logo {
+			text-align: center;
+		}
+
+		&__block2 {
+			margin-top: 0px;
+		}
+
 		&__title {
 			color: #fff;
-			font-size: 29px;
+			font-size: 30px;
 		}
 
-		&__link-mobile {
-			width: 320px;
-			display: inline-block;
-			background-color: #fff;
-			padding: 19px 0 19px 0;
-			border-radius: 15px;
-		}
-	}
-
-	.telegram {
-		&::after {
-			position: absolute;
-			right: 35px;
-		}
-	}
-	.viber {
-		&::after {
-			position: absolute;
-			right: 57px;
-		}
-	}
-	.footer {
-		&__img {
-			margin-top: 30px;
+		&__title-bold {
+			color: #fff;
 		}
 
 		&__text {
-			text-align: center;
+			color: #fff;
+			font-size: 18px;
+		}
+
+		&__sub-text {
+			display: none;
+		}
+
+		&__link-mobile {
+			display: flex;
+			background-color: #fff;
+			border-radius: 15px;
+		}
+
+		&__footer {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+		}
+
+		&__imgaes {
+			display: none;
+		}
+	}
+	.bot {
+		display: none;
+	}
+	.text1 {
+		font-family: "Gilroy";
+		font-style: normal;
+		font-weight: 600;
+	}
+	.text2 {
+		font-family: "Gilroy";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+	}
+	.link-mobile {
+		&__container {
+			display: block;
+			margin: 40px auto;
+			max-width: 384px;
+		}
+	}
+
+	.footer {
+		&__img {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			margin-top: 10px;
+		}
+
+		&__text {
 			font-family: "Gilroy";
 			font-style: normal;
 			font-weight: normal;
 			color: #fff;
 			font-size: 16px;
-			margin-top: 20px;
+			margin: 10px 20px;
+			text-align: center;
 		}
 	}
-
-	.veres__footer {
-		margin: 0 auto;
-		width: 242px;
+	.mobile__telegram {
+		margin: 0 20px 0 20px;
+	}
+	.mobile__viber {
+		margin: 20px 20px 0 20px;
 	}
 }
