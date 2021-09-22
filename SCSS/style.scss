@@ -20,11 +20,17 @@
 	font-style: normal;
 	font-weight: 600;
 }
-.text1 {
+p.text1 {
 	margin-top: 48px;
+	font-size: 30px;
 }
-.text2 {
+p.text2 {
 	margin-top: 20px;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	color: #707070;
 }
 
 body {
@@ -181,6 +187,15 @@ body {
 }
 
 @media (max-width: 1250.98px) {
+	p.text1 {
+		margin-top: 38px;
+		font-size: 27px;
+	}
+	p.text2 {
+		margin-top: 20px;
+		font-size: 24px;
+		color: #707070;
+	}
 	.veres {
 		&__content {
 		}
@@ -199,11 +214,8 @@ body {
 
 		&__title {
 			margin: 0 20px;
-			font-size: 50px;
+			font-size: 40px;
 			text-align: center;
-		}
-
-		&__title-bold {
 		}
 
 		&__text {
@@ -213,7 +225,8 @@ body {
 
 		&__sub-text {
 			text-align: center;
-			padding-bottom: 40px;
+			padding-bottom: 70px;
+			font-size: 28px;
 		}
 
 		&__imgaes {
@@ -272,6 +285,15 @@ body {
 }
 
 @media (max-width: 1000.98px) {
+	p.text1 {
+		margin-top: 38px;
+		font-size: 27px;
+	}
+	p.text2 {
+		margin-top: 20px;
+		font-size: 24px;
+		color: #fff;
+	}
 	.veres {
 		&__content {
 			flex: 0 1 100%;
@@ -286,7 +308,7 @@ body {
 		}
 
 		&__block {
-			margin-top: 0px;
+			margin-top: 30px;
 			flex: 1 1 auto;
 		}
 
@@ -349,12 +371,11 @@ body {
 	}
 	.link-mobile {
 		&__container {
-			margin: 20px 20px 0 20px;
+			margin: 30px 0 0 0;
 			display: flex;
 
 			width: 100%;
 			justify-content: space-between;
-			margin-left: -0px;
 		}
 	}
 
@@ -428,13 +449,25 @@ body {
 }
 
 @media (max-width: 600px) {
+	p.text1 {
+		margin-top: 15px;
+		font-size: 20px;
+	}
+	p.text2 {
+		margin-top: 25px;
+		font-size: 16px;
+		color: #fff;
+	}
 	.veres {
 		&__block {
-			margin-top: 0px;
+			margin-top: 20px;
 		}
 
 		&__logo {
 			text-align: center;
+			& img {
+				transform: scale(0.8);
+			}
 		}
 
 		&__block2 {
@@ -451,6 +484,7 @@ body {
 		}
 
 		&__text {
+			margin-top: 15px;
 			color: #fff;
 			font-size: 18px;
 		}
@@ -463,6 +497,7 @@ body {
 			display: flex;
 			background-color: #fff;
 			border-radius: 15px;
+			font-size: 16px;
 		}
 
 		&__footer {
@@ -479,21 +514,11 @@ body {
 	.bot {
 		display: none;
 	}
-	.text1 {
-		font-family: "Gilroy";
-		font-style: normal;
-		font-weight: 600;
-	}
-	.text2 {
-		font-family: "Gilroy";
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-	}
+
 	.link-mobile {
 		&__container {
 			display: block;
-			margin: 40px auto;
+			margin: 30px auto 20px auto;
 			max-width: 344px;
 		}
 	}
@@ -517,9 +542,17 @@ body {
 		}
 	}
 	.mobile__telegram {
+		height: 50px;
 		margin: 0 20px 0 20px;
+		& img {
+			transform: scale(0.9);
+		}
 	}
 	.mobile__viber {
+		height: 50px;
 		margin: 20px 20px 0 20px;
+		& img {
+			transform: scale(0.9);
+		}
 	}
 }
